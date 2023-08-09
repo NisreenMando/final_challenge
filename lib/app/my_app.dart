@@ -4,7 +4,7 @@ import 'package:fluter_template/core/data/repositories/shared_prefrence_reposito
 import 'package:fluter_template/core/translations/app_translation.dart';
 import 'package:fluter_template/core/utils/general_util.dart';
 import 'package:fluter_template/ui/shared/utils.dart';
-import 'package:fluter_template/ui/views/splash_screen/splash_screen.dart';
+import 'package:fluter_template/ui/views/login_view/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               primarySwatch: Colors.blue,
             ),
-            home: const SplashScreenView()));
+            home: const LoginView()));
   }
 }
 

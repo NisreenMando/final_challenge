@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CustomText extends StatefulWidget {
   final String text;
   final double? size;

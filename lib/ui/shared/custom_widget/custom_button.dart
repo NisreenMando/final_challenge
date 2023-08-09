@@ -9,7 +9,7 @@ class CustomButton extends StatefulWidget {
   final Color? backgroundColor;
   final String? title;
   final Color? textColor;
-  final VoidCallback? onpressd;
+  final Function()? onPressed;
   final Color? borderColor;
   final IconData? icon;
   final double? height;
@@ -29,7 +29,7 @@ class CustomButton extends StatefulWidget {
       this.backgroundColor,
       this.title,
       this.textColor,
-      this.onpressd,
+      this.onPressed,
       this.borderColor,
       this.icon,
       this.fontsize,
@@ -63,7 +63,7 @@ class _CustomButtonState extends State<CustomButton> {
           color: widget.backgroundColor ?? const Color(0xffFC6011),
         ),
         child: MaterialButton(
-            onPressed: widget.onpressd ?? () {},
+            onPressed: widget.onPressed ?? () {},
             child: widget.child ??
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
